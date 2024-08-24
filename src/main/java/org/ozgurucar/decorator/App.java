@@ -16,7 +16,7 @@ public class App {
 
         StripedReportDecorator decorator1 = new StripedReportDecorator(normalReport);
         SmallReportDecorator decorator2 = new SmallReportDecorator(decorator1);
-        SignedReportDecorator decorator = new SignedReportDecorator(decorator2);
+        SignedReportDecorator decorator = new SignedReportDecorator(normalReport);
 
         String text = decorator.getText();
         System.out.println(text);
